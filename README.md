@@ -326,7 +326,7 @@ Senior Software Developer with **7+ years** building enterprise software. I spec
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4c6ef5,100:845ef7&height=100&section=footer"/>
 
-**📍 Based near Braunschweig, Germany**
+**📍 Based near Brunswick, Germany**
 
 `Remote-first` · `Hybrid nearby` · `Relocation if supported`
 
