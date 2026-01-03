@@ -1,7 +1,7 @@
 <div align="center">
 
 # Ashley Leslie  
-**Senior Software Engineer** · Full-Stack · UI Craft · Enterprise Integrations · AI/Cloud (when it fits)
+**Senior Software Engineer** · End-to-End Delivery · Systems Thinking · UI/UX Clarity · Integrations · AI (pragmatic)
 
 <a href="https://asleslie.com/en">
   <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-asleslie.com-111111?style=for-the-badge">
@@ -15,65 +15,131 @@
 
 </div>
 
+<p align="center">
+  <a href="#signature-work">Signature work</a> ·
+  <a href="#how-i-design">How I design</a> ·
+  <a href="#how-i-deliver">How I deliver</a> ·
+  <a href="#toolbox">Toolbox</a>
+</p>
+
 ---
 
-I’m a senior full-stack engineer who likes owning work end-to-end — from shaping the problem, to building the UI and APIs, to shipping something stable.
-I’m especially happy when I can make software **feel good to use**: clean interaction, thoughtful layout, and details that make the UI look “finished”.
+I ship production software end-to-end: clarify the workflow, design boundaries and contracts, build UI + APIs, integrate external services, and keep it stable once it’s live.
+
+My UI/UX focus isn’t “pretty screens” — it’s **clarity**: intuitive flows, strong defaults, and interfaces that explain themselves (especially in workflow-heavy apps).
+
+Most of my professional work lives in private repos (company GitLab / self-hosted), so GitHub here is intentionally light.  
+The deeper context is on my portfolio.
 
 <br/>
+
+## Signature work
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>UI & Product-Facing Work</h3>
-      I enjoy building interfaces that are both <b>beautiful</b> and <b>practical</b>:
-      component-driven UI, predictable state, responsive layouts, and the kind of polish users notice.
+      <h3>Training Management Platform</h3>
+      Led a platform from scratch that replaced spreadsheet coordination with a real workflow:
+      lifecycle processes, automated reminders, structured feedback flows, and Microsoft ecosystem integration —
+      including <b>Single Sign-On (SSO)</b> via <b>Microsoft Entra ID</b> and Microsoft Graph integrations.
       <br/><br/>
-      <sub><b>Angular</b> · <b>TypeScript</b> · <b>React</b> · <b>UX-minded implementation</b></sub>
+      <sub><b>Angular</b> · <b>Java</b> · <b>SSO (Entra ID)</b> · <b>Microsoft Graph</b> · <b>Azure</b></sub>
     </td>
     <td width="50%" valign="top">
-      <h3>Enterprise Systems & Integrations</h3>
-      I build systems that survive real constraints: identity, permissions, integrations, and long-term maintainability.
-      I’m comfortable designing APIs, handling edge cases, and keeping production calm.
+      <h3>Quote / Offer Automation Tool</h3>
+      Built a system that turns customer Excel quote requests (often 2–3k semi-structured rows) into a structured, reviewable offer.
+      Each row is normalized and evaluated against internal product/pricing data — including a vector database where embeddings
+      (from a large text embedding model) enable semantic matching when inputs are inconsistent.
+      The workflow is designed around uncertainty: confidence signals, fallbacks, and a UI optimized for fast human verification.
       <br/><br/>
-      <sub><b>Java</b> · <b>Spring</b> · <b>REST</b> · <b>Microsoft Graph / Entra</b> · <b>Azure</b></sub>
+      <sub><b>PostgreSQL</b> · <b>Vector DB</b> · <b>Embeddings</b> · <b>TypeScript</b> · <b>Java</b></sub>
     </td>
   </tr>
 
   <tr>
     <td width="50%" valign="top">
-      <h3>Selected Work</h3>
-      - Internal platform that replaced spreadsheet-driven coordination with a real workflow.<br/>
-      - Private internal AI assistant on Azure for curated company knowledge.<br/>
-      - Automation pipeline using vector search + fallbacks to produce reviewable drafts from messy input.<br/>
-      - Modernization work: upgrades, quality gates, tests, and keeping services healthy over time.<br/>
-      <br/>
-      <sub><i>Details live on my portfolio; GitHub is where I keep public tools and experiments.</i></sub>
+      <h3>Internal AI Assistant (Department rollout)</h3>
+      Deployed an internal AI assistant for selected departments, backed by a vector database fed with curated company knowledge.
+      It supports internal discovery and Q&A across documentation and structured context (e.g., organizational structure / hierarchy),
+      while respecting restricted access.
+      <br/><br/>
+      <sub><b>Azure AI Foundry</b> · <b>Vector DB</b> · <b>LLM APIs</b> · <b>React</b></sub>
     </td>
     <td width="50%" valign="top">
-      <h3>How I show up</h3>
-      I’m the person who:
-      <ul>
-        <li>clarifies requirements without turning it into a ceremony,</li>
-        <li>keeps stakeholders aligned with short feedback loops,</li>
-        <li>writes code others can pick up confidently,</li>
-        <li>cares about quality without blocking delivery.</li>
-      </ul>
-      <sub><b>Ownership</b> · <b>Clarity</b> · <b>Pragmatism</b> · <b>Reliability</b></sub>
+      <h3>Modernization & Reliability</h3>
+      Kept long-lived services healthy: upgrades, migrations, quality gates, tests, and reducing issues flagged by scanners —
+      the work that prevents “small problems” from becoming incidents later.
+      <br/><br/>
+      <sub><b>Java</b> · <b>CI/CD</b> · <b>Testing</b> · <b>Code Quality</b></sub>
     </td>
   </tr>
 </table>
 
 <br/>
 
+## How I design
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Systems thinking</h3>
+      I design for change and production reality:
+      clear responsibilities, explicit API contracts (OpenAPI), migration-friendly data,
+      and failure-aware behavior (timeouts/retries where appropriate, predictable errors, safe defaults).
+      <br/><br/>
+      I aim for systems that stay understandable months later — not just “working today”.
+    </td>
+    <td width="50%" valign="top">
+      <h3>UI/UX clarity</h3>
+      I like UIs that reduce cognitive load:
+      predictable state, good naming, sensible defaults, and flows that guide the user without needing a manual.
+      <br/><br/>
+      Especially strong in workflow-heavy internal tools (forms, lifecycle states, review steps, edge cases).
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+## How I deliver
+
+- Align early, write decisions down, keep feedback loops short.
+- De-risk the unknowns first (integrations, permissions, data quality, rollout).
+- Prefer sustainable engineering: observable systems, useful docs, and guardrails that help teams move faster.
+
+<br/>
+
 <details>
-  <summary><b>Toolbox</b></summary>
+  <summary><b>How I use AI</b></summary>
   <br/>
-  Java · Spring · REST · WebSockets · Angular · TypeScript · React · PostgreSQL · SQL Server · Azure · Microsoft Graph/Entra · Docker/Kubernetes · CI/CD · Testing
+  <b>AI-assisted development</b>: daily driver depending on environment —
+  Claude Code for deep iteration/refactoring, and GitHub Copilot in VS Code where it’s standard.
+  Always paired with human review + tests as the backstop.
+  <br/><br/>
+  <b>AI in products</b>: I integrate LLM APIs when they solve a real problem — and design for permissions,
+  privacy, fallbacks, and audits.
+  <br/><br/>
+  <sub><b>Claude / Anthropic</b> · <b>GitHub Copilot</b> · <b>LLM APIs</b> · <b>Guardrails</b></sub>
+</details>
+
+<br/>
+
+## Toolbox
+
+<details open>
+  <summary><b>Tech I use a lot</b></summary>
+  <br/>
+  <b>Backend</b>: Java · Spring · REST · WebSockets · OpenAPI/Swagger<br/>
+  <b>Frontend</b>: Angular (primary) · TypeScript · React · workflow-heavy UI<br/>
+  <b>Data</b>: PostgreSQL · SQL Server · Oracle · Liquibase · Vector similarity search<br/>
+  <b>Cloud/Integrations</b>: Azure · Microsoft Graph · Microsoft Entra ID · SSO<br/>
+  <b>Quality/Delivery</b>: Docker · Kubernetes · CI/CD · SonarQube · JUnit · Mockito<br/>
+  <b>Daily drivers</b>: IntelliJ IDEA · VS Code<br/>
 </details>
 
 <br/>
 
 <div align="center">
-  <i>More context + case studies: <a href="https://asleslie.com/en">asleslie.com</a></i>
+  <sub><b>Based near Braunschweig, Germany</b> · Remote-first · Hybrid nearby · Relocation if supported</sub><br/>
+  <i>Portfolio & case studies: <a href="https://asleslie.com/en">asleslie.com</a></i>
 </div>
